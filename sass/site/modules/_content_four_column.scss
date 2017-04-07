@@ -1,0 +1,17 @@
+.module--content_four_column {
+	border-color: #A0B023;
+	
+	&:before {
+		content: 'Content Four Column';
+		background: #A0B023;
+		margin-top: -.75em;
+		color: #fff;
+		padding: .5em 1em;
+	}
+	
+	section {
+		@if $stage == wires {
+			border: 1px solid #A0B023;
+		}	
+	}
+}

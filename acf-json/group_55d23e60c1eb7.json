@@ -1,0 +1,56 @@
+{
+    "key": "group_55d23e60c1eb7",
+    "title": "Page Settings",
+    "fields": [
+        {
+            "key": "field_55d23e7030ca9",
+            "label": "Aside",
+            "name": "aside",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Default": "Default",
+                "Left": "Left",
+                "Right": "Right",
+                "Both": "Both",
+                "None": "None"
+            },
+            "default_value": {
+                "Default": "Default"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Selection for choosing a sidebar for this page.",
+    "modified": 1440164970,
+    "local": "json"
+}

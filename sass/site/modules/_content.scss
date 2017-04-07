@@ -1,0 +1,11 @@
+.module--content {
+	border-color: #239A98;
+	
+	&:before {
+		content: 'Content';
+		background: #239A98;
+		margin-top: -.75em;
+		color: #fff;
+		padding: .5em 1em;
+	}
+}

@@ -1,0 +1,74 @@
+
+.site-branding {
+	
+	.site-title a {
+		display: block;
+		max-width: 320px;
+		width: 70%;
+		height: 100px;
+		padding: 1em 3em;
+		text-indent: -999em;
+		background: url(img/circlecube-home-horizontal.png) center 90% no-repeat transparent;
+		background-size: contain;
+		// border-radius: 60px;
+		margin: .5em auto 0;
+		
+		&:hover {
+			// background-color: $color__d-white;
+		}
+	}
+	.site-description{
+		display: none;
+	}
+}
+
+
+.main-navigation {
+	margin-top: -1.5em;
+	
+	.menu-primary-menu-container {
+		display: table;
+		margin: 0 auto;
+		
+		ul {
+			list-style:none;
+		}
+		
+		li {
+			display: inline;
+			
+			
+			&.current-menu-item a {
+				border-bottom-color: $color__d-white;
+			}
+			
+			&:nth-child(7n + 0) a:hover {
+				border-bottom-color: $color__d-red;
+			}
+			&:nth-child(7n + 1) a:hover {
+				border-bottom-color: $color__l-blue;
+			}
+			&:nth-child(7n + 2) a:hover {
+				border-bottom-color: $color__l-red;
+			}
+			&:nth-child(7n + 3) a:hover {
+				border-bottom-color: $color__d-blue;
+			}
+			&:nth-child(7n + 4) a:hover {
+				border-bottom-color: $color__m-blue;
+			}
+			&:nth-child(7n + 5) a:hover {
+				border-bottom-color: $color__m-red;
+			}
+			&:nth-child(7n + 6) a:hover {
+				border-bottom-color: $color__l-white;
+			}
+		}
+	}
+	
+	a {
+		padding: 9px 13px;
+		color: #666;
+		border-bottom: 7px solid $color__m-white;
+	}
+}

@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------
+## Site Layouts
+--------------------------------------------------------------*/
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Site Header
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
+## Site Footer
+--------------------------------------------------------------*/
+@import "footer";
+
+/*--------------------------------------------------------------
+## Site Modules
+--------------------------------------------------------------*/
+@import "modules/all";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+* {
+	box-sizing: border-box;
+}
+a {
+	transition: all .2s ease;
+}
+body {
+	background: $color__m-white;
+}
+
+.row_wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+.widget {
+	
+	.widget-title {
+		font-size: 18px;
+		font-style: italic;
+	}
+
+	.entry-title {
+		font-size: 18px;
+		margin-top: 0;
+		padding-top:0;
+		clear: none;
+	}
+
+	img.attachment-thumbnail,
+	img.attachment-thumbnail {
+		width: 80px;
+		margin: .4em 1em 1em 0;
+		float:left;
+		border: 1px solid $color__m-blue;
+	}
+	.entry-summary {
+		margin: 0;
+	}
+	p {
+		font-size: 14px;
+	}
+	
+	.type-post {
+		margin: 0 0 2em;
+	}
+	
+	.byline {
+		display:none;
+	}
+	
+}
+.widgets, 
+.portfolios {
+	.portfolio_wrap {
+		position: relative;
+		height: 0;
+		padding-top: 50%;
+		overflow: hidden;
+		
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin:0;
+		}
+		.entry-title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin:0;
+			font-size: 16px;
+			text-shadow: 1px 1px 1px $color__d-gray;
+			
+			a {
+				opacity:0;
+				display:block;
+				padding: 1em;
+				color: $color__l-white;
+			}	
+		}
+		
+		&:hover .entry-title a {
+			opacity:1;
+		}
+		
+	}
+	
+	.type-portfolio {
+		
+		
+		&:nth-child(5n + 0) .entry-title a {
+			background-color: $color__m-red;
+		}
+		&:nth-child(5n + 1) .entry-title a {
+			background-color: $color__m-blue;
+		}
+		&:nth-child(5n + 2) .entry-title a {
+			background-color: $color__d-blue;
+		}
+		&:nth-child(5n + 3) .entry-title a {
+			background-color: $color__l-red;
+		}
+		&:nth-child(5n + 4) .entry-title a {
+			background-color: $color__m-blue;
+		}
+	}
+}
+
+
+.portfolios {
+	.type-portfolio {
+		img {
+			width: 100%;
+			height: auto;
+		}	
+	}
+}
+.portfolio_images,
+.portfolio_image {
+	list-style:none;
+	margin-right: 0 !important;
+}
+
+.apps-img {
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 2em;
+	display: block;
+}
+
+.single-portfolio aside {
+	margin-top: 5em;
+	
+	img {
+		margin: .5em 0;
+	}
+}
+.portfolio_more {
+	
+	background: $color__d-white;
+	padding-bottom: 2em;
+	margin-bottom: -2em;
+	
+	h3 {
+		padding: 1em 0 0;
+	}
+	
+	&:before {
+		content: '';
+		display:block;
+		border-top: 7px solid $color__l-blue;
+		border-bottom: 3px solid $color__l-white;
+		margin: 3em 0 0em;
+	}
+}

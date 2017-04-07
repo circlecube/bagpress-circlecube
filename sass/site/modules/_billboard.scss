@@ -1,0 +1,11 @@
+.module--billboard {
+	border-color: #F15B22;
+	
+	&:before {
+		content: 'Billboard';
+		background: #F15B22;
+		margin-top: -.75em;
+		color: #fff;
+		padding: .5em 1em;
+	}
+}

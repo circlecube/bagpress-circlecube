@@ -1,0 +1,90 @@
+.site-footer {
+	margin: 2em 0 -2em;
+	border-top: 2px solid $color__l-white;
+	border-bottom: 72px solid $color__m-red;
+	
+	&:before {
+		content: '';
+		display:block;
+		border-top: 7px solid $color__l-blue;
+		border-bottom: 21px solid $color__m-blue;
+		margin-bottom: 3em;
+	}
+	&:after {
+		content: '';
+		display:block;
+		border-top: 7px solid $color__d-white;
+		border-bottom: 7px solid $color__l-red;
+		margin: 3em 0 0em;
+	}
+	
+	p {
+		line-height: 2em;
+	}
+	.widget img.attachment-thumbnail {
+		margin-bottom: 0;
+	}
+}
+
+.legal {
+	font-size: 12px;
+	text-align: center;
+}
+
+#social-menu {
+	margin: 0 auto;
+	display:table;
+	text-align:center;
+	
+	li {
+		position: relative;
+		font-size:2em;
+		padding: 10px;
+		color: $color__m-gray;
+		transition: all .2s ease;
+			
+		&.fa-facebook:hover {
+			color: #3b5998;
+		}
+		&.fa-linkedin:hover {
+			color: #007bb6;
+		}
+		&.fa-twitter:hover {
+			color: #4099FF;
+		}
+		&.fa-google-plus:hover {
+			color: #dd4b39;
+		}
+		&.fa-github:hover {
+			color: #4183c4;
+		}
+		&.fa-lastfm:hover {
+			color: #c3000d;
+		}
+		&.fa-apple:hover {
+			color: #0088cc;
+		}
+		&.fa-android:hover {
+			color: #a4c639;
+		}
+		&.fa-commenting:hover {
+			color: #F07D25;
+		}
+		&.fa-wordpress:hover {
+			color: #0087BE;
+		}
+		&.fa-user:hover {
+			color: #333;
+		}
+	}
+	a {
+		text-indent: -999em;
+		display:inline-block;
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		width:100%;
+		height:2em;
+	}
+}
