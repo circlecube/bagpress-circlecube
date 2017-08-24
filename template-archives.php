@@ -67,21 +67,6 @@ function posts_by_year() {
 						  </ul>
 						<?php endforeach; ?>
 					</div>
-
-					<div class="widget widget_categories">
-						<h2 class="widgettitle">Categories</h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
 					
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 					
